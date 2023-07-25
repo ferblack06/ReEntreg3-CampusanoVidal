@@ -1,0 +1,168 @@
+
+/* estilos para páginas hechas con boostrap*/
+  
+
+@import "../scss/Modulos/condicional";
+
+
+
+/* estilos para página hecha con grids*/
+
+
+.L{
+           
+@import "../scss/Modulos/header";
+@import "../scss/Modulos/main";
+@import "../scss/Modulos/footer";
+@import "../scss/Modulos/imagenes";
+@import "../scss/Modulos/mixins";
+@import "../scss/Modulos/contacto";
+
+/* reset de la página*/
+
+* {@include reset();
+    
+}
+
+/* estilo de párrafo*/
+@include parrafo();
+
+/* responsive para mobile y tablet para páginas con grids*/
+
+@include responsive(480px){
+    main{
+        @include flexbox();
+    }   
+
+}
+
+
+@include responsive(480px){
+    nav ul {
+        @include flexbox();
+    }   
+
+}
+
+@include responsive(480px){
+    main{
+        .videox{
+            width: 100%;
+            height: 50%;
+        }
+
+        .imgxx{
+            width: 100%;
+            height: 50%;
+
+        }
+
+        .imgxxx{
+            width: 100%;
+            height: 50%;
+
+        }
+
+     
+
+    }   
+
+}
+
+@include responsive(480px){
+    Header{
+        @include flexbox();
+    }   
+
+}
+
+@include responsivetablet(768px){
+    main{
+        @include flexbox();
+    }   
+
+}
+
+@include responsivetablet(768px){
+    Header{
+        @include flexbox();
+      
+    }   
+
+}
+
+@include responsivetablet(768px){
+    nav ul {
+        @include flexbox();
+    }   
+
+}
+
+@include responsivetablet(768px){
+    main{
+        
+
+    
+
+        .imgxx{
+            width: 60%;
+            height: 40%;
+
+        }
+
+        .imgxxx{
+            width: 100%;
+            height: 50%;
+           
+
+        }
+    }   
+
+   
+
+}
+
+@include responsive(480px){
+    Footer{
+        @include flexbox ();
+
+        }
+
+    }
+
+@include responsivetablet(768px){
+    Footer{
+        @include flexbox ();
+
+        }
+
+    }
+
+ 
+    body{
+        @include body();
+        background-color: rgb(227, 182, 235);
+       
+    }
+
+    #logo img{
+        width: 40%;
+    
+
+}
+
+/* clase para una imagen*/
+.imgxxx{
+    width: 90%;
+    
+   
+}
+
+/* clase para un tipo de texto*/
+.text{
+    color: rgb(20, 1, 15);
+    margin: 30px 30px;
+    font-size: 2rem;
+}
+
+}
